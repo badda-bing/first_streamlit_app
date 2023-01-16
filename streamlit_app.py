@@ -43,7 +43,7 @@ def get_fruit_from_snowflake():
 
         return my_cur.fetchall()
 
-if stremlit.button('Get List')
+if stremlit.button('Get List'):
     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
     my_data_rows = get_fruit_from_snowflake()
     streamlit.dataframe(my_data_rows)
